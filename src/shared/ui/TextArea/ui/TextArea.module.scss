@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 120px;
+
+  padding: 10px 12px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  outline: none;
+  resize: vertical;
+
+  transition: all 0.2s ease;
+
+  &::placeholder {
+    color: rgba(var(--black), 0.4);
+  }
+}
+
+/* ===== PRIMARY ===== */
+.primary {
+  @extend .textarea;
+
+  background: rgb(var(--white));
+  border-color: rgb(var(--secondary-border));
+
+  &:focus {
+    border-color: rgb(var(--primary));
+  }
+}
+
+/* ===== SECONDARY ===== */
+.secondary {
+  @extend .textarea;
+
+  background: rgb(var(--secondary));
+  border-color: rgb(var(--secondary-border));
+
+  &:focus {
+    border-color: rgb(var(--primary));
+  }
+}
+
+/* ===== TERTIARY ===== */
+.tertiary {
+  @extend .textarea;
+
+  background: transparent;
+  border-color: transparent;
+
+  &:focus {
+    background: rgba(var(--black), 0.03);
+  }
+}
+
+.error {
+  border-color: rgb(var(--danger)) !important;
+}

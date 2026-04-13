@@ -1,0 +1,37 @@
+.root_h1 {
+  font: var(--font-xxl);
+}
+
+.root_h2 {
+  font: var(--font-xl);
+}
+
+.root_h3 {
+  font: var(--font-l);
+}
+
+.root_h4 {
+  font: var(--font-m);
+}
+
+.root_h5 {
+  font: var(--font-s);
+}
+
+.root_h6 {
+  font: var(--font-xs);
+}
+
+.root_body {
+  font: var(--body);
+}
+
+.root_bodyBold {
+  font: var(--body-bold);
+  color: rgb(var(--black));
+}
+
+.root_error {
+  font: var(--body);
+  color: rgb(var(--red));
+}

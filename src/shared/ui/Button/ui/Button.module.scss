@@ -1,0 +1,122 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  transition: all 0.2s ease;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon:first-child {
+  margin-right: 8px;
+}
+
+// ===== SECONDARY =====
+.secondary {
+  @extend .button;
+
+  background: rgb(var(--secondary));
+  color: rgb(var(--black));
+  border-color: rgb(var(--secondary-border));
+
+  &:hover {
+    background: rgb(var(--secondary-hover));
+  }
+
+  &:active {
+    background: rgb(var(--secondary-active));
+  }
+}
+
+// ===== PRIMARY =====
+.primary {
+  @extend .button;
+
+  background: rgb(var(--primary));
+  color: rgb(var(--white));
+
+  &:hover {
+    background: rgb(var(--primary-hover));
+  }
+
+  &:active {
+    background: rgb(var(--primary-active));
+  }
+}
+
+// ===== DANGER =====
+.danger {
+  @extend .button;
+
+  background: rgb(var(--danger));
+  color: rgb(var(--white));
+
+  &:hover {
+    background: rgb(var(--danger-hover));
+  }
+
+  &:active {
+    background: rgb(var(--danger-active));
+  }
+}
+
+// ===== TERTIARY =====
+.tertiary {
+  @extend .button;
+
+  background: transparent;
+  color: rgb(var(--black));
+
+  &:hover {
+    background: rgba(var(--black), 0.05);
+  }
+}
+
+// ===== BORDERED PRIMARY =====
+.bordered-primary {
+  @extend .button;
+
+  background: transparent;
+  color: rgb(var(--primary));
+  border-color: rgb(var(--primary));
+
+  &:hover {
+    background: rgba(var(--primary), 0.1);
+  }
+}
+
+// ===== BORDERED DANGER =====
+.bordered-danger {
+  @extend .button;
+
+  background: transparent;
+  color: rgb(var(--danger));
+  border-color: rgb(var(--danger));
+
+  &:hover {
+    background: rgba(var(--danger), 0.1);
+  }
+}

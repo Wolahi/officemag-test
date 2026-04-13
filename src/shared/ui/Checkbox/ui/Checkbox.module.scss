@@ -1,0 +1,43 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+
+  cursor: pointer;
+  accent-color: rgb(var(--primary));
+
+  transition: all 0.2s ease;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== PRIMARY ===== */
+.primary {
+  accent-color: rgb(var(--primary));
+}
+
+/* ===== SECONDARY ===== */
+.secondary {
+  accent-color: rgb(var(--secondary));
+}
+
+/* ===== TERTIARY ===== */
+.tertiary {
+  accent-color: rgb(var(--black));
+}
+
+.error {
+  outline: 2px solid rgb(var(--danger));
+  border-radius: 4px;
+}

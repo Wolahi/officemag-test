@@ -1,0 +1,146 @@
+:root {
+  //fonts
+  --font-family-main: 'Proxima Nova', sans-serif;
+
+  // body
+  --font-size-body: 14px;
+  --font-line-body: 16px;
+  --font-weight-body: 400;
+  --body: var(--font-weight-body) var(--font-size-body) / var(--font-line-body)
+    var(--font-family-main);
+
+  // body-bold
+  --font-size-body-bold: 14px;
+  --font-line-body-bold: 16px;
+  --font-weight-body-bold: 600;
+  --body-bold: var(--font-weight-body-bold) var(--font-size-body-bold) /
+    var(--font-line-body-bold) var(--font-family-main);
+
+  // xs h6
+  --font-size-xs: 10px;
+  --font-line-xs: 16px;
+  --font-weight-xs: 600;
+  --font-xs: var(--font-weight-xs) var(--font-size-xs) / var(--font-line-xs)
+    var(--font-family-main);
+
+  // s h5
+  --font-size-s: 12px;
+  --font-line-s: 18px;
+  --font-weight-s: 600;
+  --font-s: var(--font-weight-s) var(--font-size-s) / var(--font-line-s)
+    var(--font-family-main);
+
+  // m h4
+  --font-size-m: 14px;
+  --font-line-m: 20px;
+  --font-weight-m: 600;
+  --font-m: var(--font-weight-m) var(--font-size-m) / var(--font-line-m)
+    var(--font-family-main);
+
+  // l h3
+  --font-size-l: 15px;
+  --font-line-l: 20px;
+  --font-weight-l: 600;
+  --font-l: var(--font-weight-l) var(--font-size-l) / var(--font-line-l)
+    var(--font-family-main);
+
+  // xl h2
+  --font-size-xl: 18px;
+  --font-line-xl: 24px;
+  --font-weight-xl: 600;
+  --font-xl: var(--font-weight-xl) var(--font-size-xl) / var(--font-line-xl)
+    var(--font-family-main);
+
+  // xxl h1
+  --font-size-xxl: 26px;
+  --font-line-xxl: 32px;
+  --font-weight-xxl: 600;
+  --font-xxl: var(--font-weight-xxl) var(--font-size-xxl) / var(--font-line-xxl)
+    var(--font-family-main);
+
+  // std colors
+  --black: 11, 10, 12;
+  --red: 212, 67, 85;
+  --yellow: 247, 212, 25;
+  --gray: 234, 234, 234;
+  --light-gray: 221, 221, 221;
+
+  // buttons
+  // базовые
+  --white: 255, 255, 255;
+  --black: 51, 51, 51;
+
+  // secondary (серая)
+  --secondary: 243, 243, 243;
+  --secondary-border: 217, 217, 217;
+  --secondary-hover: 230, 230, 230;
+  --secondary-active: 220, 220, 220;
+
+  // primary (зелёная)
+  --primary: 107, 142, 35;
+  --primary-hover: 95, 127, 31;
+  --primary-active: 79, 106, 26;
+
+  // danger (красная)
+  --danger: 217, 0, 0;
+  --danger-hover: 184, 0, 0;
+  --danger-active: 153, 0, 0;
+
+  // disabled
+  --disabled-btn: 219, 219, 219;
+  --disabled-input-text: 167, 167, 167;
+
+  // input
+  --error: 255, 0, 0;
+  --caret-color: 0, 0, 0;
+  --icon-input: 25, 25, 25;
+  --close-btn: 149, 149, 149;
+  --primary-input: 243, 246, 255;
+  --primary-checked: 0, 50, 255;
+  --warning: 208, 135, 0;
+  --warning-hover: 166, 95, 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima-Nova-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima-Nova-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima-Nova-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima-Nova-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Proxima Nova';
+  src: url('./fonts/Proxima-Nova-Semibold.otf') format('opentype');
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  font: var(--body);
+}

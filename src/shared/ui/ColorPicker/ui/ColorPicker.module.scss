@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.picker {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.error {
+  outline: 2px solid rgb(var(--danger));
+  border-radius: 6px;
+}

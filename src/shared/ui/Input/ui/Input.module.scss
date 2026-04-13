@@ -1,0 +1,79 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 8px;
+  height: 35px;
+
+  transition: all 0.2s ease;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  background: transparent;
+  color: rgb(var(--black));
+
+  &::placeholder {
+    color: rgba(var(--black), 0.4);
+  }
+}
+
+.prefix,
+.suffix {
+  display: inline-flex;
+  align-items: center;
+}
+
+.prefix {
+  margin-right: 8px;
+}
+
+.suffix {
+  margin-left: 8px;
+}
+
+.error {
+  border: 1px solid rgb(var(--danger)) !important;
+}
+
+/* ===== PRIMARY ===== */
+.primary {
+  @extend .wrapper;
+
+  background: rgb(var(--white));
+  border: 1px solid rgb(var(--secondary-border));
+
+  &:focus-within {
+    border-color: rgb(var(--primary));
+  }
+}
+
+/* ===== SECONDARY ===== */
+.secondary {
+  @extend .wrapper;
+
+  background: rgb(var(--secondary));
+  border: 1px solid rgb(var(--secondary-border));
+
+  &:focus-within {
+    border-color: rgb(var(--primary));
+  }
+}
+
+/* ===== TERTIARY ===== */
+.tertiary {
+  @extend .wrapper;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  &:focus-within {
+    background: rgba(var(--black), 0.03);
+  }
+}

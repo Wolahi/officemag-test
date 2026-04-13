@@ -1,0 +1,21 @@
+.root {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.block {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid rgb(var(--black), 0.4);
+  border-radius: 10px;
+
+  &Buttons {
+    @extend .block;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+  }
+}
