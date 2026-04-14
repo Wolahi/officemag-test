@@ -1,0 +1,16 @@
+.root {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 5px;
+}
+
+.schemaWrapper {
+  position: relative;
+  height: 800px;
+}
+
+.changeBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
