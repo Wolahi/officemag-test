@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
 import styles from './SwiperProducts.module.scss';
-import 'swiper/css';
-import 'swiper/css/scrollbar';
+import 'swiper/swiper.css';
+import 'swiper/swiper-bundle.css';
 import TestBeStarImage from '@/shared/assets/images/BeStar.webp';
 import { Typography } from '@/shared/ui';
 

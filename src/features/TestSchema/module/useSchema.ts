@@ -1,5 +1,11 @@
 import { useCallback, useState } from 'react';
-import { addEdge, useEdgesState, useNodesState } from 'reactflow';
+import {
+  addEdge,
+  useEdgesState,
+  useNodesState,
+  type Connection,
+  type Edge,
+} from 'reactflow';
 
 const getId = () => `${Date.now().toLocaleString()}`;
 
@@ -17,7 +23,7 @@ const useSchema = () => {
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
 
   const onConnect = useCallback(
-    params => setEdges(eds => addEdge(params, eds)),
+    (params: Connection) => setEdges((eds: Edge[]) => addEdge(params, eds)),
     [setEdges]
   );
 
@@ -33,9 +39,9 @@ const useSchema = () => {
 
   const updateNodeLabel = (id: string) => {
     setNodes(nds =>
-      nds.map(node =>
-        node.id === id
-          ? { ...node, data: { ...node.data, label: updateValue } }
+      nds?.map(node =>
+        node?.id === id
+          ? { ...node, data: { ...node.data, label: updateValue ?? '' } }
           : node
       )
     );
