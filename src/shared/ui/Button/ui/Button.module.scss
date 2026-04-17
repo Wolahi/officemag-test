@@ -120,3 +120,35 @@
     background: rgba(var(--danger), 0.1);
   }
 }
+
+.custom {
+  @extend .button;
+
+  background: rgb(var(--custom-bg));
+  color: rgb(var(--custom-color));
+
+  border: none;
+  border-radius: 999px;
+
+  box-shadow: 6px 6px 12px rgba(var(--black), 0.25),
+    -6px -6px 12px rgba(var(--white), 0.1);
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 4px 4px 8px rgba(var(--black), 0.3),
+      -4px -4px 8px rgba(var(--white), 0.12);
+  }
+
+  &:active {
+    box-shadow: inset 4px 4px 8px rgba(var(--black), 0.35),
+      inset -4px -4px 8px rgba(var(--white), 0.1);
+
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    box-shadow: none;
+    opacity: 0.4;
+  }
+}

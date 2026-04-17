@@ -26,5 +26,6 @@ export type ButtonView =
   | 'secondary'
   | 'tertiary'
   | 'danger'
+  | 'custom'
   | 'bordered-primary'
   | 'bordered-danger';

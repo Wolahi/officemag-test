@@ -124,4 +124,23 @@ export const BUTTONS_MAP: IButtonPreviewConfig[] = [
     children: 'Просмотреть',
     disabled: true,
   },
+
+  // custom
+  {
+    label: 'Custom',
+    view: 'custom',
+    children: 'Просмотреть',
+  },
+  {
+    label: 'Custom',
+    view: 'custom',
+    children: 'Просмотреть',
+    prefixIcon: <TestIcon />,
+  },
+  {
+    label: 'Custom',
+    view: 'custom',
+    children: 'Просмотреть',
+    disabled: true,
+  },
 ];

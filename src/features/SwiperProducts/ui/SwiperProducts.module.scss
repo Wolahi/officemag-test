@@ -1,0 +1,40 @@
+.root {
+  min-height: 450px;
+  position: relative;
+}
+
+.swiper {
+  height: 450px;
+}
+
+:global(.swiper-scrollbar) {
+  height: 10px !important;
+  background: rgb(var(--gray));
+  border-radius: 999px;
+}
+
+:global(.swiper-scrollbar-drag) {
+  background: rgb(var(--red)) !important;
+  border-radius: 999px !important;
+}
+
+.card {
+  display: grid;
+  padding: 10px;
+  height: 350px;
+  grid-template-rows: 1fr auto;
+  gap: 15px;
+  border: 1px solid #7f1d1d;
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

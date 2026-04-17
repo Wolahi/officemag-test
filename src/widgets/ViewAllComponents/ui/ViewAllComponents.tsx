@@ -2,7 +2,7 @@ import { Button, Typography } from '@/shared/ui';
 import styles from './ViewAllComponents.module.scss';
 import { TYPOGRAPHY_MAP } from '../config/typograpyConfig';
 import { BUTTONS_MAP } from '../config/buttonConfig';
-import { TestForm, TestSchema } from '@/features';
+import { SwiperProducts, TestForm, TestSchema } from '@/features';
 
 const ViewAllComponents = () => {
   return (
@@ -31,6 +31,9 @@ const ViewAllComponents = () => {
       </div>
       <div className={styles.block}>
         <TestSchema />
+      </div>
+      <div className={styles.block}>
+        <SwiperProducts />
       </div>
     </section>
   );
